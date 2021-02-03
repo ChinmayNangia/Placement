@@ -4,7 +4,7 @@ public class MaxOccurence {
         for(int i = 0 ;i <n;i++)
         {
             arr[L[i]]++;
-            arr[R[i]-i]--;
+            arr[R[i]+i]--;
         }
         int maxm = arr[0] , res = 0 ;
         for(int i = 0 ;i<n;i++){
