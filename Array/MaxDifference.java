@@ -25,7 +25,7 @@ public class MaxDifference {
     }
     public static void main(String[] args) {
         int arr[] = {2,3,10,6,4,8,1};
-        System.out.println(differ(arr));
+        System.out.println(differ_1(arr));
        
     }
 }
