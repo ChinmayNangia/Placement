@@ -12,7 +12,7 @@ public class UnboundedSearch{
     public static int Naive(int arr[],int x){
         int i = 0 ;
         while(true){
-            if(arr[i] == x ) return -1;
+            if(arr[i] == x ) return i;
             else if(arr[i]>x)return i-1;
             i++;
         }
