@@ -5,7 +5,7 @@ public class reverse{
        while(temp!=0){
            int ld = temp%10;
            rev = rev*10+ld;
-           temp /=temp;
+           temp /=n;
 
        }
        return rev;
