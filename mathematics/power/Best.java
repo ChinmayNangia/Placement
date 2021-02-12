@@ -18,3 +18,4 @@ public class Best {
         System.out.println(pow_1(x, n));
     }
 }
+// 3 to the power of 2
