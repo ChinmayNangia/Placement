@@ -16,7 +16,7 @@ public class Peak {
         int mid = (low+high)/2;
         if(mid == 0 || arr[mid -1]<=arr[mid] && mid==n-1 || arr[mid+1]<=arr[mid])
             return arr[mid];
-        else if(mid>=0|| arr[mid]>=arr[mid-1])
+        else if(mid>0 && arr[mid]<=arr[mid-1])
             high = mid-1;
         else
             low = mid+1;    
@@ -24,7 +24,7 @@ public class Peak {
     return -1;
 }
     public static void main(String[] args) {
-        int arr[] = {10, 7, 8, 20, 12}, n = 5;
+        int arr[] = {1, 7, 8, 20, 12}, n = 5;
 
         System.out.println(Naive(arr, n));
         System.out.println(Efficient(arr, n));
