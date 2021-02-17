@@ -41,7 +41,7 @@ public class Allocation {
         for(int i = 0 ; i < n ;i ++){
             if(sum+arr[i]>ans){
                 req++;
-                sum+=arr[i];
+                sum=arr[i];
             }else sum+=arr[i];
         }
         return req<=k;  
