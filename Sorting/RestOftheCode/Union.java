@@ -35,7 +35,7 @@ public class Union {
         
         int m = a.length;
         int n = b.length;
-	    uni(a,b,m,n);
+	    // uni(a,b,m,n);
         Efficient(a, b, m, n);
     }
 }
