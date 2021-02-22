@@ -40,10 +40,12 @@ public class Partition{
             
             do{
                 i++;
-            }while(arr[i]<pivot);
+            }
+            while(arr[i]<pivot);
             do{
                 j--;
-            }while(arr[j]>pivot);
+            }
+            while(arr[j]>pivot);
             if(i>=j)return j;
             int temp=arr[i];
             arr[i]=arr[j];
