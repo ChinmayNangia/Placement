@@ -46,7 +46,9 @@ public class Partition{
                 j--;
             }
             while(arr[j]>pivot);
+            
             if(i>=j)return j;
+
             int temp=arr[i];
             arr[i]=arr[j];
             arr[j]=temp;
