@@ -26,8 +26,8 @@ public class Union {
             
             else{System.out.print(a[i]+" ");i++;j++;}
         }
-        while(i<m){if(i==0||a[i]!=a[i-1])System.out.print(a[i]+" ");i++;}
-        while(j<n){if(j==0||b[j]!=b[j-1])System.out.print(b[j]+" ");j++;}
+        while(i<m){if(i==0||a[i]!=a[i-1])System.out.print(a[i]+" ");else i++;}
+        while(j<n){if(j==0||b[j]!=b[j-1])System.out.print(b[j]+" ");else j++;}
     }
     public static void main(String[] args) {
         int a[] = new int[]{3,8,10};
