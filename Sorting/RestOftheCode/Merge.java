@@ -38,3 +38,6 @@ public class Merge {
 
     }
 }
+
+
+//  this is the also for train leaving problem
