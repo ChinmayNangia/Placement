@@ -11,7 +11,7 @@ public class MedianSortedArray {
          int partitionX = (low+high)/2;
          int partitionY = (x+y+1)/2 - partitionX;
  
-        int maxLeftX = (partitionX == 0) ? Integer.MIN_VALUE : input1[partitionX - 1];
+             int maxLeftX = (partitionX == 0) ? Integer.MIN_VALUE : input1[partitionX - 1];
              int minRightX = (partitionX == x) ? Integer.MAX_VALUE : input1[partitionX];
  
              int maxLeftY = (partitionY == 0) ? Integer.MIN_VALUE : input2[partitionY - 1];
