@@ -1,4 +1,4 @@
-public class FrequencyOfElements{
+public class FrequencyOfElementsSortedArray{
     public static void Frequency(int arr[]){
         int i =1 ,Frequency = 1;
         int n = arr.length;
