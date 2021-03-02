@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-class SubArraywith{
+class SubArraywith {
 public static void main (String[] args) 
 {
     int arr[] = new int[]{5, 8, 6, 13, 3, -1};
