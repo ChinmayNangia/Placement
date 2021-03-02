@@ -1,20 +1,31 @@
 import java.util.HashSet;
+import java.util.Set;
 
-public class SubArraywith {
-    public static int sum1(int arr[] , int n , int sum){
-        HashSet<Integer> h = new HashSet<Integer>();
-        int prefix = 0 ;
-        for(int i = 0 ;i<n;i++){
-            prefix+=arr[i];
-            if(h.contains(prefix)==true)
-                    return 1;
-                h.add(prefix);    
-        }
-        return 0 ;
+class SubArraywith{
+public static void main (String[] args) 
+{
+    int arr[] = new int[]{5, 8, 6, 13, 3, -1};
+    int sum=22;
+    int n = arr.length;
+    
+    System.out.println(isSum(arr, n, sum));
+    
+}
+static boolean isSum(int arr[], int n, int sum)
+{
+    Set<Integer> s = new HashSet<Integer>();
+    int pre_sum = 0;
+    for(int i = 0; i < n; i++)
+    {
+        if(pre_sum==sum)
+            return true;
+        pre_sum += arr[i];
+        if(s.contains(pre_sum-sum) == true)
+            return true;
+          
+        s.add(pre_sum);
     }
-    // prefix -sum
-    // same with sum given 
-    public static void main(String[] args) {
-        
-    }
+    
+    return false;
+}
 }
