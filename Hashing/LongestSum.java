@@ -14,6 +14,7 @@ public class LongestSum {
 
             if(!hMap.containsKey(pre))
                 hMap.put(pre, i);
+                
             if(hMap.containsKey(pre-sum))
                 {
                     if(maxLen<i-hMap.get(pre-sum))
