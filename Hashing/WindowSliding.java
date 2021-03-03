@@ -24,3 +24,12 @@ public class WindowSliding {
         Window(arr, k, n);
     }
 }
+
+
+// create a frequency map of first k items
+// print the size
+//for(int i = k ;i<n;i++)
+// decrease the frequency using get function
+// if the frequency is 0 remove it 
+//  if the element os not present in the map  insert it 
+// print the size of the map again
