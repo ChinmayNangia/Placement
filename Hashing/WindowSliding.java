@@ -8,9 +8,12 @@ public class WindowSliding {
         System.out.println(hMap.size());
         for(int i = k;i<n;i++){
             hMap.put(arr[i-k], hMap.get(arr[i-k])-1);
+
             if(hMap.get(arr[i-k])==0)
                 hMap.remove(arr[i-k]);     
+
             hMap.put(arr[i], hMap.getOrDefault(arr[i],0)+1);
+            
             System.out.println(hMap.size());
      }
 
@@ -29,6 +32,7 @@ public class WindowSliding {
 // create a frequency map of first k items
 // print the size
 //for(int i = k ;i<n;i++)
+
 // decrease the frequency using get function
 // if the frequency is 0 remove it 
 //  if the element os not present in the map  insert it 
