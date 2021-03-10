@@ -3,6 +3,7 @@ class Node{
     Node next;
     Node(int x){
         data = x;
+        // Node next;
     }
 }
 public class Basic{
@@ -14,4 +15,5 @@ public class Basic{
         head.next = temp1;
         temp1.next = temp2;
     }
+
 }
