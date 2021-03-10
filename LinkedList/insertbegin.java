@@ -17,11 +17,20 @@ public class insertbegin {
    
     public static void main(String[] args) {
             Node2 head= null;
-            head = InsertAtBeginning(head,10);
-            head = InsertAtBeginning(head, 20);
             head = InsertAtBeginning(head,30);
-           
+            head = InsertAtBeginning(head, 20);
+            head = InsertAtBeginning(head ,10);
+            printlist(head);
 
+    }
+
+
+    private static void printlist(Node2 head) {
+        Node2 curr=head;
+        while(curr!=null){
+        System.out.print(curr.data+" ");
+        curr=curr.next;
+    }
     }
 
 

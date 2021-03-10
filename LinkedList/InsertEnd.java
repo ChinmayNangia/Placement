@@ -17,15 +17,30 @@ public class InsertEnd {
             cur=cur.next;
         }
         cur.next =temp;
-        return temp;
+        return head;
 
        }
+       
+       
     public static void main(String[] args) {
         Node3 head = null;
         head = InsertATheEnd(head,10);
         head = InsertATheEnd(head,20);
         head = InsertATheEnd(head,30);
+        printlist(head);
+
+    }
+
+
+    private static void printlist(Node3 head) {
+        Node3 curr=head;
+        while(curr!=null){
+        System.out.print(curr.data+" ");
+        curr=curr.next;
+    }
+    }
+       
     }
 
    
-}
+
