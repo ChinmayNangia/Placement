@@ -9,6 +9,7 @@ class Node3{
 public class InsertEnd {
     private static Node3 InsertATheEnd(Node3 head, int x) {
         Node3 temp =new  Node3(x);
+        // this allocates memory for new node
         if(head == null) 
           return temp;
         Node3 cur = head;
