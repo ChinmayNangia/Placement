@@ -18,6 +18,7 @@ public class deletefirst{
     	temp1.next=temp2;
     	temp2.prev=temp1;
     	head=delHead(head);
+        head = delHeadLast(head);
     	printlist(head);
     }
 
@@ -27,6 +28,15 @@ public class deletefirst{
         System.out.print(curr.data+" ");
         curr=curr.next;
     }System.out.println();
+    }
+    private static Node4 delHeadLast(Node4 head) {
+        Node4 curr = head;
+        if(head == null || head.next==null)return null;
+        while(curr.next != null){
+            curr = curr.next;
+        }
+        curr.next.prev = null;
+        return head;
     }
 
     private static Node4 delHead(Node4 head) {
