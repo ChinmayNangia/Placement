@@ -21,6 +21,21 @@ public class InsertBegin{
         
         return temp;
     }
+    public static Node3 insertBeginEfficient(Node3 head, int x){
+        Node3 temp=new Node3(x);
+        if(head==null){
+            temp.next=temp;
+            return temp;
+        }
+        else{
+            temp.next=head.next;
+            head.next=temp;
+            int t=head.data;
+            head.data=temp.data;
+            temp.data=t;
+            return head;
+        }
+    }
     public static void main(String[] args) {
         Node3 head=new Node3(10);
     	head.next=new Node3(20);
