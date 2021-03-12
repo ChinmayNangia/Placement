@@ -13,6 +13,16 @@ public static void cLLTraversal(Node1 head){
     for(Node1 r = head.next ; r!=head;r= r.next)
         System.out.print(r.data+" ");
 }
+public static void dowhilemethod(Node1 head) {
+    if(head == null) return ;
+    Node1 r = head;
+    do{
+        r =r.next;
+        System.out.print(r.data+" ");
+    }while(r!= head);
+
+    
+}
     public static void main(String[] args) {
         Node1 head=new Node1(10);
     	head.next=new Node1(5);
