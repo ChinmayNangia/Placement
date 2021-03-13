@@ -8,10 +8,10 @@ class Node2{
     }
 }
 public class Merge {
-    public static Node merge1(Node a , Node b){
+    public static Node2 merge1(Node2 a , Node2 b){
         if(a==null) return b;
         if(b==null) return a ;
-        Node head = null ,tail = null;
+        Node2 head = null ,tail = null;
         if(a.data<=b.data){
             head = tail = a ;
             a = a.next;
