@@ -25,7 +25,8 @@ public class detectloop{
 
     }
     public static boolean detectloopEfficient(Node head){
-        HashSet<Node> s = new HashSet<>();
+       
+        HashSet<Node> s=new HashSet<Node>(); 
         for(Node curr=head;curr!=null;curr=curr.next) {  
             if (s.contains(curr)) 
                 return true; 
